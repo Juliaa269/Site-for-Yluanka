@@ -282,7 +282,7 @@ body {
 }
 
 .section_promo .section_b .promo-img {
-    width: 430px;
+    width: 100%;
 }
 
 /* 2: section offers */
@@ -484,6 +484,17 @@ body {
     color: #ffffff;
 }
 
+@media (max-width: 1675px) {
+    .common_offers .section p {
+        font-size: 15px;
+    }
+
+    .common_offers h3 {
+        font-family: Mont;
+        font-size: 28px;
+    }
+}
+
 .common_offers .section .position {
     padding: 40px 40px;
 }
@@ -492,49 +503,13 @@ body {
     margin-bottom: 70px;
 }
 
-.common_offers .section .identika-img {
-    width: 500px;
-    /* height: 242px; */
-}
-
-.common_offers .section .packaging-img {
-    width: 501px;
-    height: 289px;
-}
-
-.common_offers .section .identika-img {
-    width: 500px;
-    height: 242px;
-}
-
-.common_offers .section .retail_branding-img {
-    width: 500px;
-}
-
-.common_offers .section .development_promo_materials-img {
-    width: 500px;
-    height: 312px;
-}
-
-.common_offers .section .social-media-img {
-    width: 500px;
-    height: 289px;
+.common_offers .section .common_offers-img {
+    width: 100%;
+    height: 100%;
 }
 
 .common_offers .retail_branding  {
     position: relative;
-}
-
-/* spot мешает */
-
-.common_offers .retail_branding::after {
-    content: '';
-    background: url(../img/spot3.png) no-repeat center center/cover;
-    height: 250px;
-    width: 250px;
-    bottom: 70px;
-    left: 1180px;
-    position: absolute;
 }
 
 .common_offers .identika h3::after {
@@ -653,6 +628,26 @@ body {
     background-color: #fff;
 }
 
+.calendars .calendars-img {
+    width: 75%;
+    height: auto;
+}
+
+.calendars .calendars-img:not(:last-child) {
+    margin-right: 20px;
+}
+
+.calendars .calendars-main-img {
+    width: 100%;
+    height: auto;
+}
+
+/* @media (max-width: 1800px) {
+    .calendars .text {
+        font-size: 27px;
+    }
+} */
+
 /* 5: Footer */
 
 .footer .footer-wrapper {
@@ -703,7 +698,17 @@ body {
 }
 
 
-
+/* @media (min-width: 1700px) {
+    .common_offers .retail_branding::after {
+        content: '';
+        background: url(../img/spot3.png) no-repeat center center/cover;
+        height: 250px;
+        width: 250px;
+        bottom: 70px;
+        left: 1180px;
+        position: absolute;
+    }
+} */
 
 @media (max-width: 1610px) {
     .section_offers .lathing .link {
@@ -746,8 +751,8 @@ body {
         right: 200px;
     }
 
-    .section_promo .section_b .promo-img {
+    /* .section_promo .section_b .promo-img {
         width: 330px;
-    }
+    } */
     
 }
