@@ -256,7 +256,7 @@ body {
 
 .section_promo .section_b {
     display: grid;
-    grid-template-columns: auto 360px;
+    grid-template-columns: auto 35%;
 }
 
 .section_promo .section_b .description {
@@ -278,11 +278,44 @@ body {
 .section_promo .section_b .promo-hand {
     position: relative;
     bottom: 100px;
-    left: -150px;
+    left: -50px;
 }
 
 .section_promo .section_b .promo-img {
     width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1800px) {
+    .section_promo .section_b .description {
+        font-size: 25px;
+        line-height: 2;
+    }
+    
+    .section_promo .section_b .greeting {
+        font-size: 70px;
+        line-height: 1.5;
+    }
+
+    .section_promo .section_a .promo-links {
+        font-family: Mont;
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    .section_promo .section_a .order::after {
+        content: '';
+        height: 2px;
+        width: 325px;
+        left: 2px;
+        position: relative;
+        border-bottom: 2px solid #ED8069;
+    }
+}
+
+@media (max-width: 1400px) {
+
+
 }
 
 /* 2: section offers */
@@ -439,6 +472,99 @@ body {
     background-color: #fff;
 }
 
+@media (max-width: 1760px) {
+    /* .section_offers .lathing .link {
+        font-size: 17px;
+        line-height: 30px;
+    } */
+
+    .section_offers .lathing {
+        grid-gap: 80px;
+        grid-column-gap: 120px;
+    }
+}
+
+@media (max-width: 1580px) {
+    .section_offers .lathing {
+        grid-gap: 50px;
+        grid-column-gap: 70px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .section_offers .lathing .link {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .section_offers .lathing li {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .section_offers h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .section_offers .connection {
+        font-family: Mont;
+        font-size: 20px;
+    }
+
+    .section_offers .lathing .social_media_design_link::after {
+        height: 12px;
+        width: 12px;
+        bottom: 2px;
+        right: -20px;
+    }
+
+    .section_offers .lathing .identika_link::after {
+        height: 12px;
+        width: 12px;
+        bottom: 2px;
+        right: -15px;
+    }
+    
+    .section_offers .lathing .corp_brand_link::after {
+        height: 12px;
+        width: 12px;
+        top: 0px;
+        right: -20px;
+    }
+    
+    .section_offers .lathing .packaging_link::after {
+        height: 12px;
+        width: 12px;
+        bottom: 3px;
+        right: -20px;
+    }
+    
+    .section_offers .lathing .retail_branding_link::after {
+        height: 12px;
+        width: 12px;
+        bottom: 2px;
+        right: -20px;
+    }
+    
+    .section_offers .lathing .development_promo_materials_link::after {
+        height: 12px;
+        width: 12px;
+        top: 0px;
+        left: 90px;
+    }
+
+    .section_offers .lathing h3 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .section_offers h2 {
+        font-size: 35px;
+    }
+}
+
 /* 3: common offers */
 
 
@@ -449,16 +575,14 @@ body {
 
 .common_offers .section_a {
     background-color: #191919;
-    /* background-color: pink; */
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
 }
 
 .common_offers .section_b {
     background-color: #191919;
-    /* background-color: blue; */
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 45% 55%;
 }
 
 .common_offers .container {
@@ -468,7 +592,7 @@ body {
 
 .common_offers h3 {
     font-family: Mont;
-    font-size: 38px;
+    font-size: 35px;
     line-height: 1.2;
     font-weight: 300;
     color: #f1f1f1;
@@ -478,13 +602,25 @@ body {
 
 .common_offers .section p {
     font-family: Mont;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.2;
     font-weight: 300;
     color: #ffffff;
 }
 
-@media (max-width: 1675px) {
+.common_offers .section .identika-text {
+    line-height: 1.4;
+}
+
+.common_offers .section .position {
+    padding: 40px 40px;
+}
+
+.common_offers .section .identika-position {
+    padding-top: 60px;
+}
+
+/* @media (max-width: 1675px) {
     .common_offers .section p {
         font-size: 15px;
     }
@@ -493,10 +629,10 @@ body {
         font-family: Mont;
         font-size: 28px;
     }
-}
+} */
 
-.common_offers .section .position {
-    padding: 40px 40px;
+.common_offers .section {
+    min-height: 313px;
 }
 
 .common_offers .section:not(:last-child){
@@ -515,69 +651,259 @@ body {
 .common_offers .identika h3::after {
     content: '';
     background: url(../img/triangle.png) no-repeat center center/cover;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     bottom: 10px;
-    left: 228px;
+    left: 208px;
     position: absolute;
 }
 
 .common_offers .corp_brand h3::after {
     content: '';
     background: url(../img/triangle.png) no-repeat center center/cover;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     bottom: 10px;
-    left: 528px;
+    left: 490px;
     position: absolute;
 }
 
 .common_offers .packaging h3::after {
     content: '';
     background: url(../img/triangle.png) no-repeat center center/cover;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     bottom: 10px;
-    left: 198px;
+    left: 188px;
     position: absolute;
 }
 
 .common_offers .retail_branding h3::after {
     content: '';
     background: url(../img/triangle.png) no-repeat center center/cover;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     bottom: 10px;
-    left: 338px;
+    left: 308px;
     position: absolute;
 }
 
 .common_offers .development_promo_materials h3::after {
     content: '';
     background: url(../img/triangle.png) no-repeat center center/cover;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     bottom: 10px;
-    left: 580px;
+    left: 530px;
     position: absolute;
 }
 
 .common_offers .social_media_design h3::after {
     content: '';
     background: url(../img/triangle.png) no-repeat center center/cover;
-    height: 25px;
-    width: 25px;
+    height: 22px;
+    width: 22px;
     bottom: 10px;
-    left: 415px;
+    left: 385px;
     position: absolute;
+}
+
+@media (max-width: 1750px) {
+    .common_offers .section p {
+        font-size: 17px;
+    }
+
+    .common_offers .section {
+        min-height: 290px;
+    }
+}
+
+@media (max-width: 1675px) {
+    .common_offers h3 {
+        font-size: 30px;
+    }
+
+    .common_offers .section p {
+        font-size: 15px;
+    }
+
+    .common_offers .section {
+        min-height: 250px;
+    }
+
+    .common_offers .identika h3::after {
+        height: 19px;
+        width: 19px;
+        bottom: 10px;
+        left: 178px;
+    }
+    
+    .common_offers .corp_brand h3::after {
+        height: 19px;
+        width: 19px;
+        bottom: 9px;
+        left: 415px;
+    }
+    
+    .common_offers .packaging h3::after {
+        height: 19px;
+        width: 19px;
+        bottom: 9px;
+        left: 158px;
+    }
+    
+    .common_offers .retail_branding h3::after {
+        height: 19px;
+        width: 19px;
+        bottom: 9px;
+        left: 268px;
+    }
+    
+    .common_offers .development_promo_materials h3::after {
+        height: 19px;
+        width: 19px;
+        bottom: 9px;
+        left: 460px;
+    }
+    
+    .common_offers .social_media_design h3::after {
+        height: 19px;
+        width: 19px;
+        bottom: 9px;
+        left: 325px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .common_offers h3 {
+        font-size: 27px;
+    }
+
+    .common_offers .section p {
+        font-size: 14px;
+    }
+
+    .common_offers .section {
+        min-height: 237px;
+    }
+
+    .common_offers .identika h3::after {
+        height: 17px;
+        width: 17px;
+        bottom: 8px;
+        left: 158px;
+    }
+    
+    .common_offers .corp_brand h3::after {
+        height: 17px;
+        width: 17px;
+        bottom: 8px;
+        left: 375px;
+    }
+    
+    .common_offers .packaging h3::after {
+        height: 17px;
+        width: 17px;
+        bottom: 8px;
+        left: 140px;
+    }
+    
+    .common_offers .retail_branding h3::after {
+        height: 17px;
+        width: 17px;
+        bottom: 8px;
+        left: 240px;
+    }
+    
+    .common_offers .development_promo_materials h3::after {
+        height: 17px;
+        width: 17px;
+        bottom: 8px;
+        left: 410px;
+    }
+    
+    .common_offers .social_media_design h3::after {
+        height: 17px;
+        width: 17px;
+        bottom: 8px;
+        left: 295px;
+    }
+
+    .common_offers .section .position {
+        padding: 35px 35px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .common_offers h3 {
+        font-size: 24px;
+    }
+
+    .common_offers .section p {
+        font-size: 13.5px;
+    }
+
+    .common_offers .section {
+        min-height: 220px;
+    }
+
+    .common_offers .section .position {
+        padding: 30px 30px;
+    }
+
+    .common_offers .identika h3::after {
+        height: 15px;
+        width: 15px;
+        bottom: 7px;
+        left: 138px;
+    }
+    
+    .common_offers .corp_brand h3::after {
+        height: 15px;
+        width: 15px;
+        bottom: 7px;
+        left: 330px;
+    }
+    
+    .common_offers .packaging h3::after {
+        height: 15px;
+        width: 15px;
+        bottom: 7px;
+        left: 125px;
+    }
+    
+    .common_offers .retail_branding h3::after {
+        height: 15px;
+        width: 15px;
+        bottom: 7px;
+        left: 210px;
+    }
+    
+    .common_offers .development_promo_materials h3::after {
+        height: 15px;
+        width: 15px;
+        bottom: 7px;
+        left: 365px;
+    }
+    
+    .common_offers .social_media_design h3::after {
+        height: 15px;
+        width: 15px;
+        bottom: 7px;
+        left: 260px;
+    }
+}
+
+@media (max-width: 1311px) {
+
 }
 
 /* 4: Calendars */
 
-.third-wrapper {
+/* .third-wrapper {
     margin: 0 auto;
     width: 65%;
-}
+} */
 
 .calendars .last-wrapper {
     margin: 0 auto;
@@ -648,6 +974,107 @@ body {
     }
 } */
 
+@media (max-width: 1851px) {
+    .calendars .text {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 1661px) {
+    .calendars .text {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 1481px) {
+    .calendars .text {
+        font-size: 25px;
+    }
+
+    .calendars .text .ordering {
+        font-size: 23px;
+    }
+
+    .calendars .calendar-examples {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1301px) {
+    .calendars .text {
+        font-size: 22px;
+    }
+
+    .calendars .text .ordering {
+        font-size: 20px;
+    }
+
+    .calendars .calendar-examples {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .calendars .text {
+        margin-top: 40px;
+    }
+    .calendars .text .btn_order {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 1161px) {
+    .calendars .text {
+        margin-top: 35px;
+        font-size: 19px;
+    }
+
+    .calendars .text .ordering {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    .calendars .calendar-examples {
+        margin-left: 35px;
+    }
+
+    .calendars .text .btn_order {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 981px) {
+    .calendars .text {
+        margin-top: 25px;
+        font-size: 17px;
+    }
+
+    .calendars .text .ordering {
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+
+    .calendars .text .btn_order {
+        margin-top: 40px;
+    }
+
+    .calendars .calendar-examples {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .calendars .text {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .calendars .text .ordering {
+        font-size: 12px;
+        padding: 12px 25px;
+    }
+}
+
 /* 5: Footer */
 
 .footer .footer-wrapper {
@@ -697,62 +1124,127 @@ body {
     margin-right: 30px;
 }
 
-
-/* @media (min-width: 1700px) {
-    .common_offers .retail_branding::after {
-        content: '';
-        background: url(../img/spot3.png) no-repeat center center/cover;
-        height: 250px;
-        width: 250px;
-        bottom: 70px;
-        left: 1180px;
-        position: absolute;
-    }
-} */
-
-@media (max-width: 1610px) {
-    .section_offers .lathing .link {
-        font-size: 18px;
-    }
-    
-}
-
-@media (max-width: 1475px) {
-    .section_offers .lathing .link {
-        font-size: 16px;
-    }
-
-    .section_offers .lathing li {
-        line-height: 26px;
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 1570px) {
-    .section_promo .section_b .greeting {
-        font-size: 50px;
-    }
-
-    .section_promo .section_a .navigation::after {
-        right: 225px;
-    }
+.footer .contacts-links .contacts-icon {
+    width: 90px;
+    height: 90px;
 }
 
 @media (max-width: 1400px) {
-    .section_promo .section_b .greeting {
-        font-size: 43px;
+    .footer .contacts-links .links:not(:last-child){
+        margin-right: 27px;
     }
 
-    .section_promo .section_b .description {
-        font-size: 17px;
+    .footer .contacts {
+        font-size: 32px;
     }
 
-    .section_promo .section_a .navigation::after {
-        right: 200px;
+    .footer .contacts-links .contacts-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer .contacts-links .links:not(:last-child){
+        margin-right: 25px;
     }
 
-    /* .section_promo .section_b .promo-img {
-        width: 330px;
-    } */
+    .footer .contacts {
+        font-size: 30px;
+    }
+
+    .footer .contacts-links .contacts-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer .footer-wrapper::after {
+        top: 110px;
+        right: -250px;
+    }
+
+    .footer .footer-wrapper::before {
+        height: 220px;
+        width: 220px;
+        top: 30px;
+        left: -350px;
+    }
+}
+
+@media (max-width: 950px) {
+    .footer .contacts-links .links:not(:last-child){
+        margin-right: 22px;
+    }
+
+    .footer .contacts {
+        font-size: 25px;
+    }
+
+    .footer .contacts-links .contacts-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer .footer-wrapper::after {
+        height: 110px;
+        width: 50px;
+        top: 70px;
+        right: -200px;
+    }
+
+    .footer .footer-wrapper::before {
+        height: 180px;
+        width: 180px;
+        top: 10px;
+        left: -280px;
+    }
+
+    .footer .contacts-links {
+        margin-top: 20px;
+        padding-bottom: 30px;
     
+    }
+
+    .footer .footer-wrapper {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer .footer-wrapper::after {
+        display: none;
+    }
+
+    .footer .footer-wrapper::before {
+        display: none;
+    }
+
+    .footer .footer-wrapper {
+        padding-top: 30px;
+    }
+
+    .footer .contacts-links {
+        margin-top: 15px;
+        padding-bottom: 20px;
+    
+    }
+}
+
+@media (max-width: 700px) {
+    .footer .contacts-links .contacts-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .footer .contacts {
+        font-size: 20px;
+    }
+
+    .footer .contacts-links .links:not(:last-child){
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+
 }
