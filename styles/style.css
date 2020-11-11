@@ -226,7 +226,7 @@ body {
     background: url(../img/spot.png) no-repeat center center/cover;
     height: 200px;
     width: 150px;
-    right: 200px;
+    right: 235px;
     bottom: 30px;
     position: relative;
 }
@@ -261,7 +261,7 @@ body {
 
 .section_promo .section_b .description {
     font-family: Mont;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.8;
     font-weight: 300;
     position: relative;
@@ -299,14 +299,14 @@ body {
 
     .section_promo .section_a .promo-links {
         font-family: Mont;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 1.4;
     }
 
     .section_promo .section_a .order::after {
         content: '';
         height: 2px;
-        width: 325px;
+        width: 270px;
         left: 2px;
         position: relative;
         border-bottom: 2px solid #ED8069;
@@ -1090,7 +1090,7 @@ body {
     height: 130px;
     width: 60px;
     top: 130px;
-    right: -300px;
+    right: -450px;
     position: absolute;
 }
 
@@ -1100,7 +1100,7 @@ body {
     height: 230px;
     width: 230px;
     top: 30px;
-    left: -400px;
+    left: -450px;
     position: absolute;
 }
 
