@@ -1,165 +1,11 @@
-/* Mont Black */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-Black.eot');
-    src: url('../fonts/Mont-Black.ttf');
-    src: url('../fonts/Mont-Black.woff');
-    src: url('../fonts/Mont-Black.woff2');
-    font-weight: 900;
-    font-style: normal;
-}
-
-/* Mont Black Italic */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-ThinItalic.eot');
-    src: url('../fonts/Mont-ThinItalic.ttf');
-    src: url('../fonts/Mont-ThinItalic.woff');
-    src: url('../fonts/Mont-ThinItalic.woff2');
-    font-weight: 100;
-    font-style: italic;
-}
-
-/* Mont ExtraLight */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-ExtraLight.eot');
-    src: url('../fonts/Mont-ExtraLight.ttf');
-    src: url('../fonts/Mont-ExtraLight.woff');
-    src: url('../fonts/Mont-ExtraLight.woff2');
-    font-weight: 200;
-    font-style: normal;
-}
-
-/* Mont Bold */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-Bold.eot');
-    src: url('../fonts/Mont-Bold.ttf');
-    src: url('../fonts/Mont-Bold.woff');
-    src: url('../fonts/Mont-Bold.woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/* Mont Heavy Italic */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-HeavyItalic.eot');
-    src: url('../fonts/Mont-HeavyItalic.ttf');
-    src: url('../fonts/Mont-HeavyItalic.woff');
-    src: url('../fonts/Mont-HeavyItalic.woff2');
-    font-weight: 800;
-    font-style: italic;
-}
-
-/* Mont Black Italic */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-BlackItalic.eot');
-    src: url('../fonts/Mont-BlackItalic.ttf');
-    src: url('../fonts/Mont-BlackItalic.woff');
-    src: url('../fonts/Mont-BlackItalic.woff2');
-    font-weight: 900;
-    font-style: italic;
-}
-
-/* Mont ExtraLight Italic */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-ExtraLightItalic.eot');
-    src: url('../fonts/Mont-ExtraLightItalic.ttf');
-    src: url('../fonts/Mont-ExtraLightItalic.woff');
-    src: url('../fonts/Mont-ExtraLightItalic.woff2');
-    font-weight: 200;
-    font-style: italic;
-}
-
-/* Mont Heavy */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-Heavy.eot');
-    src: url('../fonts/Mont-Heavy.ttf');
-    src: url('../fonts/Mont-Heavy.woff');
-    src: url('../fonts/Mont-Heavy.woff2');
-    font-weight: 800;
-    font-style: normal;
-}
-
 /* Mont SemiBold */
 @font-face {
-    font-family: 'Mont';
+    font-family: 'Mont-SemiBold';
     src: url('../fonts/Mont-SemiBold.eot');
     src: url('../fonts/Mont-SemiBold.ttf');
     src: url('../fonts/Mont-SemiBold.woff');
     src: url('../fonts/Mont-SemiBold.woff2');
     font-weight: 600;
-    font-style: normal;
-}
-
-/* Mont Regular Italic */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-RegularItalic.eot');
-    src: url('../fonts/Mont-RegularItalic.ttf');
-    src: url('../fonts/Mont-RegularItalic.woff');
-    src: url('../fonts/Mont-RegularItalic.woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* Mont Bold Italic */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-BoldItalic.eot');
-    src: url('../fonts/Mont-BoldItalic.ttf');
-    src: url('../fonts/Mont-BoldItalic.woff');
-    src: url('../fonts/Mont-BoldItalic.woff2');
-    font-weight: bold;
-    font-style: italic;
-}
-
-/* Mont SemiBold Italic */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-SemiBoldItalic.eot');
-    src: url('../fonts/Mont-SemiBoldItalic.ttf');
-    src: url('../fonts/Mont-SemiBoldItalic.woff');
-    src: url('../fonts/Mont-SemiBoldItalic.woff2');
-    font-weight: 600;
-    font-style: italic;
-}
-
-/* Mont Light Italic */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-LightItalic.eot');
-    src: url('../fonts/Mont-LightItalic.ttf');
-    src: url('../fonts/Mont-LightItalic.woff');
-    src: url('../fonts/Mont-LightItalic.woff2');
-    font-weight: 300;
-    font-style: italic;
-}
-
-/* Mont Thin */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-Thin.eot');
-    src: url('../fonts/Mont-Thin.ttf');
-    src: url('../fonts/Mont-Thin.woff');
-    src: url('../fonts/Mont-Thin.woff2');
-    font-weight: 100;
-    font-style: normal;
-}
-
-/* Mont Regular */
-@font-face {
-    font-family: 'Mont';
-    src: url('../fonts/Mont-Regular.eot');
-    src: url('../fonts/Mont-Regular.ttf');
-    src: url('../fonts/Mont-Regular.woff');
-    src: url('../fonts/Mont-Regular.woff2');
-    font-weight: normal;
     font-style: normal;
 }
 
@@ -638,9 +484,9 @@ body {
         content: none;
     }
 
-    .section_promo .section_b {
+    /* .section_promo .section_b {
         margin-top: 40px;
-    }
+    } */
 }
 
 @media (max-width: 530px) {
@@ -685,7 +531,7 @@ body {
 }
 
 .section_offers .lathing .link {
-    font-family: Mont;
+    font-family: Mont-SemiBold;
     font-size: 20px;
     line-height: 40px;
     font-weight: 600;
@@ -702,6 +548,7 @@ body {
 
 
 .section_offers .lathing li {
+    font-family: Mont;
     font-weight: 300;
     text-transform: none;
     line-height: 30px;
@@ -1028,7 +875,7 @@ body {
 
     .section_offers .connection {
         font-size: 14px;
-        padding: 8px 18px;
+        padding: 10px 20px;
     }
 }
 
@@ -1250,7 +1097,7 @@ body {
 
 .common_offers .section .common_offers-img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .common_offers .retail_branding  {
@@ -1837,7 +1684,7 @@ body {
     display: grid;
     grid-template-columns: 40% auto;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .calendars .season-calendar {
@@ -1847,31 +1694,32 @@ body {
 
 .calendars .calendar-examples {
     margin-left: 65px;
+    /* min-height: 800px; */
 }
 
 .calendars .text {
-    margin-top: 70px;
     font-family: Mont;
-    font-size: 37px;
+    font-size: 40px;
     line-height: 1.2;
     font-weight: 300;
     color: #f1f1f1;
+    margin-top: 40px;
 }
 
-.calendars .text p:last-child{
-    margin-top: 45px;
+.calendars .text .second-paragraph{
+    margin-top: 50px;
 }
 
 .calendars .text .btn_order {
-    margin-top: 50px;
+    margin-top: 15%;
 }
 
 .calendars .text .ordering {
     text-decoration: none;
     color: #fff;
-    padding: 20px 50px;
+    padding: 25px 55px;
     font-family: Mont;
-    font-size: 27px;
+    font-size: 32px;
     font-weight: 300;
     letter-spacing: 0.025em;
     color: #191919;
@@ -1881,7 +1729,7 @@ body {
 }
 
 .calendars .calendars-img {
-    width: 75%;
+    width: 90%;
     height: auto;
 }
 
@@ -1899,6 +1747,18 @@ body {
         font-size: 27px;
     }
 } */
+
+@media (max-width: 2046px) {
+    .calendars .text .btn_order {
+        margin-top: 13%;
+    }
+}
+
+@media (max-width: 1950px) {
+    .calendars .text .btn_order {
+        margin-top: 11%;
+    }
+}
 
 @media (max-width: 1851px) {
     .calendars .text {
@@ -1926,6 +1786,16 @@ body {
     }
 }
 
+@media (max-width: 1430px) {
+    .calendars .text .btn_order {
+        margin-top: 10%;
+    }
+
+    .calendars .text .second-paragraph{
+        margin-top: 35px;
+    }
+}
+
 @media (max-width: 1301px) {
     .calendars .text {
         font-size: 22px;
@@ -1950,7 +1820,12 @@ body {
     }
 
     .calendars .last-wrapper {
+        padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .calendars .text .ordering {
+        padding: 20px 45px;
     }
 }
 
@@ -1994,6 +1869,16 @@ body {
     }
 }
 
+@media (max-width: 930px) {
+    .calendars .text .btn_order {
+        margin-top: 10%;
+    }
+
+    .calendars .text .second-paragraph{
+        margin-top: 25px;
+    }
+}
+
 @media (max-width: 850px) {
     .calendars .text {
         margin-top: 20px;
@@ -2002,17 +1887,20 @@ body {
 
     .calendars .text .ordering {
         font-size: 12px;
-        padding: 12px 25px;
+        padding: 13px 25px;
     }
 
     .calendars .last-wrapper {
-        padding-bottom: 60px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
 @media (max-width: 765px) {
     .calendars .last-wrapper {
         width: 85%;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .calendars .text {
@@ -2030,10 +1918,34 @@ body {
     }
 }
 
+@media (max-width: 730px) {
+    .calendars .text {
+        margin-top: 20px;
+    }
+
+    .calendars .text .btn_order {
+        margin-top: 9%;
+    }
+
+    .calendars .text .second-paragraph{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 670px) {
+    .calendars .text .second-paragraph{
+        margin-top: 20px;
+    }
+}
+
 @media (max-width: 650px) {
     .calendars .text {
         margin-top: 27px;
         font-size: 16px;
+    }
+
+    .calendars .text .second-paragraph{
+        margin-top: 15px;
     }
 }
 
@@ -2057,6 +1969,21 @@ body {
     }
 }
 
+@media (max-width: 550px) {
+    .calendars .calendar-examples {
+        margin-left: 22px;
+    }
+
+    .calendars .text .ordering {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+
+    .calendars .text .second-paragraph{
+        margin-top: 10px;
+    }
+}
+
 @media (max-width: 540px) {
     .calendars .calendar-examples {
         margin-left: 20px;
@@ -2068,7 +1995,7 @@ body {
     }
 
     .calendars .text .btn_order {
-        margin-top: 15px;
+        margin-top: 12%;
     }
 
     .calendars .text .ordering {
@@ -2077,8 +2004,18 @@ body {
     }
 
     .calendars .text {
-        margin-top: 20px;
+        margin-top: 25px;
         font-size: 14px;
+    }
+
+    .calendars .text .second-paragraph{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 505px) {
+    .calendars .text .second-paragraph{
+        margin-top: 10px;
     }
 }
 
@@ -2098,7 +2035,7 @@ body {
         width: 80%;
         display: block;
         padding-top: 30px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
 
     .calendars .calendar-examples {
