@@ -1711,6 +1711,8 @@ body {
     position: relative;
     top: 100px;
     right: 140px;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .qrcode-text::after {
@@ -1871,6 +1873,16 @@ body {
     }
 }
 
+@media (max-width: 1690px) {
+    .calendars .text .btn_order {
+        margin-top: 30px;
+    }
+
+    .order-right {
+        margin-top: 120px;
+    }
+}
+
 @media (max-width: 1661px) {
     .calendars .text {
         font-size: 23px;
@@ -1893,6 +1905,10 @@ body {
         width: 180px;
         right: -20px;
         bottom: 30px;
+    }
+
+    .order-right {
+        margin-top: 130px;
     }
 }
 
