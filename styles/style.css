@@ -1782,12 +1782,6 @@ body {
     display: none;
 }
 
-/* @media (max-width: 1800px) {
-    .calendars .text {
-        font-size: 27px;
-    }
-} */
-
 @media (max-width: 2130px) {
     .calendars .text .btn_order {
         margin-top: 15px;
